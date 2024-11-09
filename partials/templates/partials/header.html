@@ -1,0 +1,19 @@
+{% load static %}
+<header>
+  <div class="topnav" id="myTopnav">
+    <img src="{% static 'img/ishiubahor.png' %}" width="100px" alt="shiuba" />
+    <a class="active" href=".." data-translate="Homepage">Homepage</a>
+    <a href="{% url 'videos' %}" data-translate="Videos">Videos</a>
+    <a href="{% url 'about' %}" data-translate="About">About</a>
+    <a href="{% url 'news' %}" data-translate="News">News</a>
+
+    <label id="swicher" class="switch me-2">
+      <input type="checkbox" id="theme-switcher" />
+      <span class="slider round"></span>
+    </label>
+
+    <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</header>

@@ -1,0 +1,150 @@
+<footer>
+  <button
+    id="down"
+    class="btn btn-black w-100"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#downCollapse"
+    aria-label="Toggle Footer"
+    aria-expanded="false"
+    aria-controls="downCollapse"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-arrow-down-up"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5"
+      />
+    </svg>
+  </button>
+  <div class="collapse show" id="downCollapse">
+    <div class="container">
+      <div class="col-auto column-gap-2">
+        <button
+          id="langselect"
+          class="icon"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu2"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Change Language"
+        >
+          <i class="fa-solid fa-language"></i>
+        </button>
+        <div class="collapse" id="menu2">
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio1"
+            autocomplete="off"
+          />
+          <label
+            type="radio"
+            class="btn btn-outline-primary"
+            for="btnradio1"
+            onclick="setLanguage('en')"
+          >
+            🇺🇸 en-US
+          </label>
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio2"
+            autocomplete="off"
+          />
+          <label
+            type="radio"
+            class="btn btn-outline-success"
+            for="btnradio2"
+            onclick="setLanguage('br')"
+          >
+            🇧🇷 pt-BR
+          </label>
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio3"
+            autocomplete="off"
+          />
+          <label
+            type="radio"
+            class="btn btn-outline-danger"
+            for="btnradio3"
+            onclick="setLanguage('jp')"
+          >
+            🇯🇵 日本語
+          </label>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <p>
+          Powered by NEXTせだい <br />
+          &copy; 2023 - 2024 IamSHIUBA.
+          <span data-translate="footer">All rights reserved.</span>
+        </p>
+      </div>
+      <div class="col-auto column-gap-2">
+        <button
+          id="links"
+          class="icon"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Open External Links"
+        >
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+        <div class="collapse collapse" id="menu">
+          <div class="container">
+            <a
+              rel="noopener"
+              href="https://github.com/iamshiuba"
+              class="btn"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              rel="noopener"
+              href="https://x.com/iamshiuba"
+              class="btn"
+              target="_blank"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a
+              rel="noopener"
+              href="https://www.youtube.com/@iamshiuba"
+              class="btn"
+              target="_blank"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              rel="noopener"
+              href="https://soundcloud.com/iamshiuba"
+              class="btn"
+              target="_blank"
+            >
+              <i class="fa-brands fa-soundcloud"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
