@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2-$*0ari7=1q$b-xpdij_&@iyjsn-nj@tv1m#eig#o=c@ibqr2
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'ishiubadj.onrender.com',
+    'ishiuba.onrender.com',
     '127.0.0.1'
 ]
 
