@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'about',
     'news',
     'partials',
+    'django_bootstrap5',
 ]
 
 MIDDLEWARE = [
