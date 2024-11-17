@@ -1,19 +1,17 @@
-/* Light Theme */
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
-    --shadow-color: #ff000088;
-    --box-shadow: #ff11113a;
+    --shadow-color: #00000080;
+    --shadow-color-dark: #ffffff25;
+    --box-shadow: #ff11117c;
     --bg-primary: red;
-    --bg-secondary: #ff6600;
+    --bg-secondary: #ff8d23;
 }
 
-/* Dark Theme */
 body.dark {
     --bg-color: #000000;
     --text-color: #ffffff;
 }
-
 
 * {
     margin: 0;
@@ -26,7 +24,7 @@ body {
     color: var(--text-color);
 }
 
-#down, button {
+button {
     transition: all 0.3s ease;
 }
 
@@ -38,8 +36,8 @@ i {
 }
 
 i:hover {
-    background-color: var(--text-color);
-    color: var(--bg-secondary);
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
 }
 
 a {
@@ -50,18 +48,6 @@ a {
 .link {
     animation: fadeIn 5s ease-in-out;
 }
-
-#down {
-    margin: 0;
-    color: #ff0800;
-    padding: 2rem;
-}
-
-#down:hover {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
 
 #main p.lead {
     font-size: 1.5rem;
@@ -77,13 +63,18 @@ a {
     text-align: center;
 }
 
-body, h1, h2, h3, h4, h5, p, a {
-    text-shadow: 0px 0px 10px var(--shadow-color);
+body h1, h2, h3, h4, h5, p, a {
+    text-shadow: 2px 3px 2px var(--shadow-color);
+    text-align: center;
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark p, body.dark a {
+    text-shadow: 2px 3px 2px var(--shadow-color-dark);
     text-align: center;
 }
 
 h1 {
-    color: #ff0800;
+    color: var(--bg-primary);
     font-size: 4rem;
 }
 
@@ -92,7 +83,7 @@ h1, .display-1, .display-2, .display-3 {
 }
 
 h2, h3, h4 {
-    color: var(--text-color);
+    color: var(--bg-secondary);
     font-size: 2rem;
 }
 
@@ -110,7 +101,7 @@ iframe {
     max-width: auto;
     margin: auto;
     border-radius: 8px;
-    box-shadow: 0px 0px 8px 8px var(--box-shadow);
+    box-shadow: 0px 0px 1rem var(--box-shadow);
 }
 
 button {
@@ -121,19 +112,40 @@ button {
 }
 
 label.btn:hover {
-    background-color: var(--bg-primary) !important;
+    border-color: var(--text-color) !important;
+    color: var(--text-color) !important;
 }
 
 label {
-    margin-top: 1rem;
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 #youtube, .video-links {
     text-align: center;
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .video-links {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -142,7 +154,7 @@ label {
     margin-bottom: 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
-    color: #ff261d;
+    color: var(--bg-primary);
     transition: color, border 0.3s ease;
 }
 
@@ -183,11 +195,6 @@ label {
 
 .topnav .icon {
     display: none;
-}
-
-
-.navbar-brand img {
-    width: 100px;
 }
 
 .display-1, .display-2, .display-3 {
@@ -260,18 +267,23 @@ label {
 }
 
 @media (max-width: 600px) {
-
     header .container {
         flex-direction: column;
         align-items: center;
     }
 
+    #videoContainer, #news {
+        flex-direction: column;
+    }
+
     main iframe {
+
         max-width: fit-content;
     }
 
     footer .container {
         flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -282,13 +294,15 @@ label {
 
     .topnav a.icon {
         float: right;
-        display: block;
+        display: flex;
     }
 }
 
 @media screen and (max-width: 600px) {
     .topnav.responsive {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
     }
 

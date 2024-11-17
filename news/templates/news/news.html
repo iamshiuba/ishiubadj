@@ -18,13 +18,8 @@
   <body>
     {% include 'partials/header.html' %}
     <main>
-      <div
-        class="row"
-        style="padding: 0.5rem; justify-content: center; align-items: center"
-      >
-        <div id="news">
-          <h1 data-translate="newsTitle">News</h1>
-        </div>
+      <div class="row">
+        <h1 data-translate="newsTitle">News</h1>
         <div class="col-auto">
           <blockquote class="twitter-tweet" data-theme="dark">
             <p lang="en" dir="ltr">
@@ -38,8 +33,9 @@
             >
           </blockquote>
         </div>
-        <div class="col-6">
-          <iframe
+        <div id="news" class="col-auto">
+          <div class="video-links">
+            <iframe
             width="400px"
             height="215px"
             src="https://www.youtube.com/embed/BzOLHaR-GEs"
@@ -48,14 +44,13 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <div class="video-links">
             <a
               rel="noopener"
               target="_blank"
               href="https://www.youtube.com/@iamshiuba/community"
-              class="video-links"
-              ><strong>CHECK OUT</strong></a
             >
+              <strong>CHECK OUT</strong>
+            </a>
           </div>
         </div>
       </div>
