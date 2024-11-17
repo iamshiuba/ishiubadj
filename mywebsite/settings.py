@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'ishiuba.onrender.com',
     '127.0.0.1'
+    'ishiuba.fly.dev'
 ]
 
 
