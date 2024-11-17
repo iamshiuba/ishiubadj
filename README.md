@@ -1,6 +1,6 @@
 # iSHIUBA (Django)
 
-This Django project that aims to facilitate on making updates of the files. It replaces the old vanilla iSHIUBA project that only uses HTML5, CSS, JS and Bootstrap 5.
+This Django project aims to facilitate on making updates of the files. It replaces the old vanilla iSHIUBA project that only uses HTML5, CSS, JS and Bootstrap 5.
 
 ## Requirements
 
