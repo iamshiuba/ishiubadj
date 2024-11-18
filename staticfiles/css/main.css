@@ -6,6 +6,7 @@
     --box-shadow: #ff11117c;
     --bg-primary: red;
     --bg-secondary: #ff8d23;
+    --hover-color: #ff000044;
 }
 
 body.dark {
@@ -25,7 +26,16 @@ body {
 }
 
 button {
-    transition: all 0.3s ease;
+    border: none;
+    background-color: transparent;
+    padding: 0 1rem;
+    color: var(--bg-primary);
+    transition: all 1.5s ease-in-out;
+}
+
+button:hover {
+    color: var(--text-color);
+    background-color: var(--hover-color);
 }
 
 i {
@@ -33,6 +43,8 @@ i {
     background-color: var(--bg-color);
     color: var(--bg-primary);
     padding: 1rem;
+    transition: all 1.5s ease-in-out;
+
 }
 
 i:hover {
@@ -54,10 +66,14 @@ a {
     line-height: 1.6;
 }
 
-.container {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+#hItems {
+    justify-content: space-between;
+}
+
+.container, .container-fluid { 
     display: flex;
+    background-color: transparent;
+    color: var(--text-color);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -104,13 +120,6 @@ iframe {
     box-shadow: 0px 0px 1rem var(--box-shadow);
 }
 
-button {
-    background-color: var(--text-color);
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-    border: none;
-}
-
 label.btn:hover {
     border-color: var(--text-color) !important;
     color: var(--text-color) !important;
@@ -155,7 +164,7 @@ footer .container {
     padding: 0.5rem;
     border-radius: 1rem;
     color: var(--bg-primary);
-    transition: color, border 0.3s ease;
+    transition: color, border 1.5s ease-in-out;
 }
 
 .video-links a:hover {
@@ -167,7 +176,7 @@ footer .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow: hidden;
     background-color: var(--bg-color);
 }
@@ -177,6 +186,7 @@ footer .container {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    transition: all 1.5s ease-in-out;
 }
 
 .topnav a:hover {
@@ -189,7 +199,6 @@ footer .container {
 }
 
 .topnav a.active:hover {
-    background-color: var(--bg-color);
     color: var(--bg-primary);
 }
 

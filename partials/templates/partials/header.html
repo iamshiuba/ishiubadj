@@ -1,16 +1,80 @@
 {% load static %}
 <header>
-  <div class="topnav" id="myTopnav">
-    <img src="{% static 'img/ishiubahor.png' %}" width="100px" alt="shiuba" />
-    <a class="active" href=".." data-translate="Homepage">Homepage</a>
-    <a href="{% url 'videos' %}" data-translate="Videos">Videos</a>
-    <a href="{% url 'about' %}" data-translate="About">About</a>
-    <a href="{% url 'news' %}" data-translate="News">News</a>
-
+  <div id="hItems" class="container">
     <label id="swicher" class="switch me-2">
       <input type="checkbox" id="theme-switcher" />
       <span class="slider round"></span>
     </label>
+
+    <button
+      id="langselect"
+      class="icon"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#language"
+      aria-controls="menu"
+      aria-expanded="false"
+      aria-label="Change Language"
+    >
+      <span class="fa-solid fa-language"></span>
+      <label for="#language">Translations</label>
+    </button>
+    <div class="collapse p-1" id="language">
+      <input
+        type="radio"
+        class="btn-check"
+        name="btnradio"
+        id="btnradio1"
+        autocomplete="off"
+      />
+      <label
+        type="radio"
+        class="btn btn-outline-primary"
+        for="btnradio1"
+        onclick="setLanguage('en')"
+      >
+        <span class="fi fi-us"></span>
+      </label>
+      <input
+        type="radio"
+        class="btn-check"
+        name="btnradio"
+        id="btnradio2"
+        autocomplete="off"
+      />
+      <label
+        type="radio"
+        class="btn btn-outline-success"
+        for="btnradio2"
+        onclick="setLanguage('br')"
+      >
+        <span class="fi fi-br"></span>
+      </label>
+      <input
+        type="radio"
+        class="btn-check"
+        name="btnradio"
+        id="btnradio3"
+        autocomplete="off"
+      />
+      <label
+        type="radio"
+        class="btn btn-outline-danger"
+        for="btnradio3"
+        onclick="setLanguage('jp')"
+      >
+        <span class="fi fi-jp"></span>
+      </label>
+    </div>
+  </div>
+  <div class="topnav" id="myTopnav">
+    <a href="..">
+      <img src="{% static 'img/ishiubahor.png' %}" width="100px" alt="shiuba" />
+    </a>
+    <a class="active" href=".." data-translate="Homepage">Homepage</a>
+    <a href="{% url 'videos' %}" data-translate="Videos">Videos</a>
+    <a href="{% url 'about' %}" data-translate="About">About</a>
+    <a href="{% url 'news' %}" data-translate="News">News</a>
 
     <a href="javascript:void(0);" class="icon" onclick="showMenu()">
       <i class="fa fa-bars-staggered"></i>
