@@ -1,124 +1,62 @@
 <footer>
   <div class="container">
-    <div class="row-cols-auto p-3">
-      <button
-        id="langselect"
-        class="icon"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menu2"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Change Language"
-      >
-        <i class="fa-solid fa-language"></i>
-      </button>
-      <div class="collapse p-1" id="menu2">
-        <input
-          type="radio"
-          class="btn-check"
-          name="btnradio"
-          id="btnradio1"
-          autocomplete="off"
-        />
-        <label
-          type="radio"
-          class="btn btn-outline-primary"
-          for="btnradio1"
-          onclick="setLanguage('en')"
+    <button
+      id="links"
+      class="icon"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#social"
+      aria-controls="menu"
+      aria-expanded="false"
+      aria-label="Open External Links"
+    >
+      <span class="fa-solid fa-arrow-up-right-from-square"></span>
+      <label for="#links">External links</label>
+    </button>
+    <div class="collapse collapse" id="social">
+      <div class="row-cols-auto">
+        <a
+          rel="noopener"
+          href="https://github.com/iamshiuba"
+          class="btn"
+          target="_blank"
         >
-          <span class="fi fi-us"></span>
-        </label>
-        <input
-          type="radio"
-          class="btn-check"
-          name="btnradio"
-          id="btnradio2"
-          autocomplete="off"
-        />
-        <label
-          type="radio"
-          class="btn btn-outline-success"
-          for="btnradio2"
-          onclick="setLanguage('br')"
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          rel="noopener"
+          href="https://x.com/iamshiuba"
+          class="btn"
+          target="_blank"
         >
-          <span class="fi fi-br"></span>
-        </label>
-        <input
-          type="radio"
-          class="btn-check"
-          name="btnradio"
-          id="btnradio3"
-          autocomplete="off"
-        />
-        <label
-          type="radio"
-          class="btn btn-outline-danger"
-          for="btnradio3"
-          onclick="setLanguage('jp')"
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a
+          rel="noopener"
+          href="https://www.youtube.com/@iamshiuba"
+          class="btn"
+          target="_blank"
         >
-          <span class="fi fi-jp"></span>
-        </label>
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a
+          rel="noopener"
+          href="https://soundcloud.com/iamshiuba"
+          class="btn"
+          target="_blank"
+        >
+          <i class="fa-brands fa-soundcloud"></i>
+        </a>
       </div>
     </div>
     <div class="col-lg-auto">
       <p>
-        Powered by NEXTせだい <br />
-        &copy; 2023 - 2024 IamSHIUBA.
+        Powered by IamSHIUBA
+        &copy; 2023 - 2024.
         <span data-translate="footer">All rights reserved.</span>
       </p>
-    </div>
-    <div class="p-3">
-      <button
-        id="links"
-        class="icon"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#menu"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Open External Links"
-      >
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      </button>
-      <div class="collapse collapse" id="menu">
-        <div class="row-cols-auto">
-          <a
-            rel="noopener"
-            href="https://github.com/iamshiuba"
-            class="btn"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a
-            rel="noopener"
-            href="https://x.com/iamshiuba"
-            class="btn"
-            target="_blank"
-          >
-            <i class="fa-brands fa-x-twitter"></i>
-          </a>
-
-          <a
-            rel="noopener"
-            href="https://www.youtube.com/@iamshiuba"
-            class="btn"
-            target="_blank"
-          >
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-
-          <a
-            rel="noopener"
-            href="https://soundcloud.com/iamshiuba"
-            class="btn"
-            target="_blank"
-          >
-            <i class="fa-brands fa-soundcloud"></i>
-          </a>
-        </div>
-      </div>
     </div>
   </div>
 </footer>
