@@ -2,7 +2,7 @@
     --bg-color: #ffffff;
     --text-color: #000000;
     --shadow-color: #00000080;
-    --shadow-color-dark: #ffffff25;
+    --shadow-color-dark: #ff00007e;
     --box-shadow: #ff11117c;
     --bg-primary: red;
     --bg-secondary: #ff8d23;
@@ -38,18 +38,25 @@ button:hover {
     background-color: var(--hover-color);
 }
 
-i {
+.btn {
+    text-decoration: none;
+    transform: scale(1.3);
     border-radius: 5px;
-    background-color: var(--bg-color);
     color: var(--bg-primary);
-    padding: 1rem;
-    transition: all 1.5s ease-in-out;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    transition: all 0.5s ease-in-out;
 
 }
 
-i:hover {
+.btn:hover {
     background-color: var(--bg-secondary);
     color: var(--bg-primary);
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 1.5s ease-in-out;
 }
 
 a {
@@ -95,7 +102,7 @@ h1 {
 }
 
 h1, .display-1, .display-2, .display-3 {
-    padding: 3rem;
+    padding: 2rem;
 }
 
 h2, h3, h4 {
@@ -164,7 +171,7 @@ footer .container {
     padding: 0.5rem;
     border-radius: 1rem;
     color: var(--bg-primary);
-    transition: color, border 1.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .video-links a:hover {
@@ -186,7 +193,7 @@ footer .container {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .topnav a:hover {
@@ -209,6 +216,10 @@ footer .container {
 .display-1, .display-2, .display-3 {
     color: var(--bg-secondary);
     font-weight: 400;
+}
+
+#swicher {
+    margin: 0.5rem;
 }
 
 .switch {
