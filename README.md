@@ -23,10 +23,6 @@ This Django project aims to facilitate on making updates of the files. It replac
 - news: application for news
 - partials: application for reusable components
 
-## Contributing
-
-If you want to contribute to the project, please read the CONTRIBUTING.md file for more information.
-
 
 ## Contributions
 
