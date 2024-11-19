@@ -29,7 +29,7 @@ const translations = {
       "Este é meu primeiro site construído do zero. Comecei a programá-lo em agosto de 2024 e terminei em outubro de 2024.<br>Por enquanto, há apenas algumas coisas para conferir: alguns vídeos, uma página sobre, uma página de notícias, e você pode visitar minhas redes sociais no rodapé do site.",
     highlight: "Destaques",
     hDescription:
-      "Uma lista de vídeos do YouTube para assistir aqui ou no meu canal oficial de artista.",
+      "Uma lista de vídeos do YouTube para assistir aqui ou no meu canal oficial do artista.",
     footer: "Todos os direitos reservados.",
     videosTitle: "Vídeos",
     videosDescription:
