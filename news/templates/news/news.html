@@ -5,7 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News - iSHIUBA</title>
-    <link rel="shortcut icon" href="{% static 'img/ishiubafavicon.png' %}" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="{% static 'img/ishiubafavicon.png' %}"
+      type="image/x-icon"
+    />
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <link
@@ -16,16 +20,16 @@
       referrerpolicy="no-referrer"
     />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
   </head>
   <body>
     {% include 'partials/header.html' %}
     <main>
-      <div class="row">
-        <h1 data-translate="newsTitle">News</h1>
-        <div class="col-md-3">
+      <h1 data-translate="newsTitle">News</h1>
+      <div class="container-fluid">
+        <div class="col-auto">
           <blockquote class="twitter-tweet" data-theme="dark">
             <p lang="en" dir="ltr">
               Hi, I&#39;m SHIUBA and this is my X profile.
@@ -38,17 +42,15 @@
             >
           </blockquote>
         </div>
-        <div id="news" class="col-md-3">
+        <div id="news" class="col-auto">
           <div class="video-links">
             <iframe
-            width="400px"
-            height="215px"
-            src="https://www.youtube.com/embed/BzOLHaR-GEs"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+              src="https://www.youtube.com/embed/BzOLHaR-GEs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
             <a
               rel="noopener"
               target="_blank"

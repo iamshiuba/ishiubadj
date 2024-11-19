@@ -4,8 +4,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Videos - iSHIUBA</title>
-    <link rel="shortcut icon" href="{% static 'img/ishiubafavicon.png' %}" type="image/x-icon" />
+    <title>Streaming - iSHIUBA</title>
+    <link
+      rel="shortcut icon"
+      href="{% static 'img/ishiubafavicon.png' %}"
+      type="image/x-icon"
+    />
     {% bootstrap_css %}
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <link
@@ -15,18 +19,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
   </head>
   <body>
     {% include 'partials/header.html' %}
     <main>
       <div id="videos">
-        <h1 data-translate="videosTitle">
-          Videos
-        </h1>
+        <h1 data-translate="streaming">Streaming</h1>
       </div>
+      <label for="youtube" class="form-label fw-bold fs-4 mb-3 mt-3 d-block text-center text-uppercase text-shadow">
+        YouTube Playlists
+      </label>
       <div id="youtube" class="container-fluid">
-        <div class="row align-items-center" id="videoContainer"></div>
+        <div id="playlistContainer" class="row"></div>
       </div>
     </main>
     {% include 'partials/footer.html' %}
