@@ -105,7 +105,7 @@ h2, h3, h4 {
     font-size: 2rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .form-label{
     animation: fadeIn 3s ease-in-out;
 }
 
@@ -117,6 +117,8 @@ p.lead {
 
 iframe {
     max-width: auto;
+    width: 768px;
+    height: 432px;
     margin: auto;
     border-radius: 8px;
     box-shadow: 0px 0px 1rem var(--box-shadow);
@@ -287,13 +289,17 @@ footer .container {
         align-items: center;
     }
 
-    #playlistContainer, #news {
+    #playlistContainer {
+        flex-direction: column;
+    }
+    
+    .container-fluid {
         flex-direction: column;
     }
 
     main iframe {
-        width: 400px;
-        height: 200px;
+        width: 360px;
+        height: 240px;
     }
 
     footer .container {
