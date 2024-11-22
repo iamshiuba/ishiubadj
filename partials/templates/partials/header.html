@@ -1,84 +1,114 @@
 {% load static %}
 <header>
-  <div id="hItems" class="container">
-    <label id="swicher" class="switch me-2">
-      <input type="checkbox" id="theme-switcher" />
-      <span class="slider round"></span>
-    </label>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+        aria-controls="menu"
+        aria-expanded="false"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <button
-      id="langselect"
-      class="icon"
-      type="button"
-      title="Change Language"
-      data-bs-toggle="collapse"
-      data-bs-target="#language"
-      aria-controls="menu"
-      aria-expanded="false"
-      aria-label="Change Language"
-    >
-      <span class="fa-solid fa-language"></span>
-      <label for="#language">Translations</label>
-    </button>
-    <div class="collapse p-1" id="language">
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio1"
-        autocomplete="off"
-      />
-      <label
-        type="radio"
-        class="btn btn-outline-primary"
-        for="btnradio1"
-        onclick="setLanguage('en')"
-      >
-        <span class="fi fi-us"></span>
-      </label>
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio2"
-        autocomplete="off"
-      />
-      <label
-        type="radio"
-        class="btn btn-outline-success"
-        for="btnradio2"
-        onclick="setLanguage('br')"
-      >
-        <span class="fi fi-br"></span>
-      </label>
-      <input
-        type="radio"
-        class="btn-check"
-        name="btnradio"
-        id="btnradio3"
-        autocomplete="off"
-      />
-      <label
-        type="radio"
-        class="btn btn-outline-danger"
-        for="btnradio3"
-        onclick="setLanguage('jp')"
-      >
-        <span class="fi fi-jp"></span>
-      </label>
+      <div class="collapse navbar-collapse" id="menu">
+        <a href="/">
+          <img src="{% static 'img/ishiubahor.png' %}" alt="shiuba" />
+        </a>
+
+        <label id="swicher" class="switch me-2">
+          <input type="checkbox" id="theme-switcher" />
+          <span class="slider round"></span>
+        </label>
+
+        <button
+          id="langselect"
+          class="icon"
+          type="button"
+          title="Change Language"
+          data-bs-toggle="collapse"
+          data-bs-target="#language"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Change Language"
+        >
+          <span class="fa-solid fa-language"></span>
+          <label for="#language">Translations</label>
+        </button>
+        <div class="collapse p-1" id="language">
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio1"
+            autocomplete="off"
+          />
+          <label
+            type="radio"
+            class="btn btn-outline-primary"
+            for="btnradio1"
+            onclick="setLanguage('en')"
+          >
+            <span class="fi fi-us"></span>
+          </label>
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio2"
+            autocomplete="off"
+          />
+          <label
+            type="radio"
+            class="btn btn-outline-success"
+            for="btnradio2"
+            onclick="setLanguage('br')"
+          >
+            <span class="fi fi-br"></span>
+          </label>
+          <input
+            type="radio"
+            class="btn-check"
+            name="btnradio"
+            id="btnradio3"
+            autocomplete="off"
+          />
+          <label
+            type="radio"
+            class="btn btn-outline-danger"
+            for="btnradio3"
+            onclick="setLanguage('jp')"
+          >
+            <span class="fi fi-jp"></span>
+          </label>
+        </div>
+
+        <ul class="nav nav-underline">
+          <li class="nav-item">
+            <a href="/" class="nav-link" data-translate="Homepage">Homepage</a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="{% url 'videos' %}"
+              class="nav-link"
+              data-translate="Streaming"
+              >Streaming</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'about' %}" class="nav-link" data-translate="About"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'news' %}" class="nav-link" data-translate="News"
+              >News</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="topnav" id="myTopnav">
-    <a href="..">
-      <img src="{% static 'img/ishiubahor.png' %}" alt="shiuba" />
-    </a>
-    <a class="active" href=".." data-translate="Homepage">Homepage</a>
-    <a href="{% url 'videos' %}" data-translate="Streaming">Streaming</a>
-    <a href="{% url 'about' %}" data-translate="About">About</a>
-    <a href="{% url 'news' %}" data-translate="News">News</a>
-
-    <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-      <button class="fa fa-bars btn"></button>
-    </a>
-  </div>
+  </nav>
 </header>

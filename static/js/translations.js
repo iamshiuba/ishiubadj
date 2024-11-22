@@ -7,6 +7,7 @@ const translations = {
     hDescription:
       "A list of YouTube videos to watch here or on my Official Artist Channel.",
     footer: "All rights reserved.",
+    follow: "Check out:",
     streaming: "Streaming",
     videosDescription:
       "This is the video section; here are some videos to watch:",
@@ -27,6 +28,7 @@ const translations = {
     hDescription:
       "Uma lista de vídeos do YouTube para assistir aqui ou no meu canal oficial do artista.",
     footer: "Todos os direitos reservados.",
+    follow: "Confira:",
     streaming: "Streaming",
     videosDescription:
       "Esta é a seção de vídeos; aqui estão alguns vídeos para assistir:",
@@ -47,6 +49,7 @@ const translations = {
     hDescription:
       "ここで、または私の公式アーティストチャンネルで視聴できるYouTubeビデオのリストです。",
     footer: "全著作権所有。",
+    follow: "チェックアウト:",
     streaming: "ストリーミング",
     videosDescription:
       "こちらがビデオセクションです。いくつか視聴できるビデオがあります:",

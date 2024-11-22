@@ -1,59 +1,50 @@
+{% load static %}
 <footer>
   <div class="container">
-    <button
-      id="links"
-      class="icon"
-      type="button"
-      title="Open External Links"
-      data-bs-toggle="collapse"
-      data-bs-target="#social"
-      aria-controls="menu"
-      aria-expanded="false"
-      aria-label="Open External Links"
-    >
-      <span class="fa-solid fa-arrow-up-right-from-square"></span>
-      <label for="#links">External links</label>
-    </button>
-    <div class="collapse collapse" id="social">
-      <div class="row-cols-auto">
+    <div class="row">
+      <!-- Social Links -->
+      <div class="col-md-6 text-center">
+        <p data-translate="follow">Check out:</p>
         <a
-          rel="noopener"
           href="https://github.com/iamshiuba"
           target="_blank"
+          title="GitHub"
+          rel="noopener"
         >
-          <button class="fa-brands fa-github btn btn-link" type="button" title="GitHub"></button>
+          <i class="fa-brands fa-github"></i>
         </a>
         <a
-          rel="noopener"
           href="https://x.com/iamshiuba"
           target="_blank"
-        >
-          <button class="fa-brands fa-x-twitter btn btn-link" type="button" title="X"></button>
-        </a>
-
-        <a
+          title="X (Twitter)"
           rel="noopener"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a
           href="https://www.youtube.com/@iamshiuba"
           target="_blank"
-        >
-          <button class="fa-brands fa-youtube btn btn-link" type="button" title="YouTube"></button>
-        </a>
-
-        <a
+          title="YouTube"
           rel="noopener"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a
           href="https://soundcloud.com/iamshiuba"
           target="_blank"
+          title="SoundCloud"
+          rel="noopener"
         >
-          <button class="fa-brands fa-soundcloud btn btn-link" type="button" title="SoundCloud"></button>
+          <i class="fa-brands fa-soundcloud"></i>
         </a>
       </div>
-    </div>
-    <div class="col-lg-auto">
-      <p>
-        Powered by IamSHIUBA
-        &copy; 2023 - 2024.
-        <span data-translate="footer">All rights reserved.</span>
-      </p>
+      <!-- Footer Info -->
+      <div class="col-md-6 text-center">
+        <p>
+          Powered by IamSHIUBA &copy; 2023 - 2024.
+          <span data-translate="footer">All rights reserved.</span>
+        </p>
+      </div>
     </div>
   </div>
 </footer>
