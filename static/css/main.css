@@ -1,20 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
-    --shadow-color: #00000080;
-    --shadow-color-dark: #ff00007e;
+    --shadow-color: #858585;
+    --shadow-color-dark: #850000;
     --box-shadow: #ff11117c;
     --bg-primary: red;
-    --bg-secondary: #ff8d23;
-    --hover-color: #ff000044;
-}
-
-body.dark {
-    --bg-color: #000000;
-    --text-color: #ffffff;
+    --bg-secondary: #fd2600;
+    --hover-color: #9c9c9c44;
 }
 
 * {
+    font-family: 'Poppins', 'Noto Sans JP', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,44 +23,48 @@ body {
     color: var(--text-color);
 }
 
-button {
-    border: none;
-    background-color: transparent;
-    padding: 0 1rem;
+body.dark {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+}
+
+/* Typography */
+body h1, h2, h3, h4, h5, p, a {
+    text-align: center;
+    text-shadow: 2px 3px 2px var(--shadow-color);
+}
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark p, body.dark a {
+    text-shadow: 2px 3px 2px var(--shadow-color-dark);
+}
+
+h1 {
     color: var(--bg-primary);
-    transition: all 1s ease-in-out;
+    font-size: 4rem;
+    padding: 2rem;
+    animation: fadeIn 3s ease-in-out;
 }
 
-button:hover, footer i:hover {
-    color: var(--text-color);
-    background-color: var(--hover-color);
+h2, h3, h4 {
+    color: var(--bg-secondary);
+    font-size: 2rem;
+    animation: fadeIn 3s ease-in-out;
 }
 
-.btn, footer i {
-    text-align:initial;
-    text-decoration: none;
-    transform: scale(1.3);
-    border-radius: 5px;
-    color: var(--bg-primary);
-    margin: 0.5rem;
-    padding: 0.5rem;
-    transition: all 0.5s ease-in-out;
-
+h1, .display-1, .display-2, .display-3 {
+    padding: 2rem;
 }
 
-.btn:hover {
-    background-color: var(--bg-secondary);
-    color: var(--bg-primary);
+.display-1, .display-2, .display-3 {
+    color: var(--bg-secondary);
+    font-weight: 400;
+    animation: fadeIn 3s ease-in-out;
 }
 
-img {
-    width: 100px;
-    transition: all 1.5s ease-in-out;
-}
-
-img:hover {
-    transform: scale(1.1);
-    transition: all 1.5s ease-in-out;
+p.lead {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 5s ease-in-out;
 }
 
 a {
@@ -74,11 +76,96 @@ a {
     animation: fadeIn 5s ease-in-out;
 }
 
-#hItems {
-    justify-content: space-between;
+/* Buttons & Links */
+.navbar-toggler {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--bg-primary);
+    color: var(--bg-primary);
+    transition: all 0.5s ease-in-out;
 }
 
-.container, .container-fluid { 
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0 1rem;
+    color: var(--bg-primary);
+    transition: all 1s ease-in-out;
+}
+
+.button, .fi {
+    padding-block: 0.5rem;
+}
+
+#langselect {
+    padding-block: 1rem;
+}
+
+#langselect:hover, .button:hover {
+    background-color: var(--hover-color);
+}
+
+.btn, footer i {
+    text-align: initial;
+    text-decoration: none;
+    transform: scale(1.3);
+    border-radius: 5px;
+    color: var(--bg-primary);
+    margin: 0.5rem;
+    padding-block: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover, footer i:hover {
+    transform: scale(1.3);
+    color: var(--text-color);
+    background-color: var(--hover-color);
+}
+
+.fi {
+    transform: scale(1.5);
+    margin: 0.5rem;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.fi:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    transform: scale(1.05);
+    color: var(--text-color);
+}
+
+label {
+    cursor: pointer;
+    color: var(--bg-primary);
+    transition: all 0.5s ease-in-out;
+}
+
+label.btn:hover {
+    border-color: var(--text-color) !important;
+    color: var(--text-color) !important;
+}
+
+/* Images */
+img {
+    margin-left: 1rem;
+    width: 100px;
+    transition: all 1.5s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+    transition: all 1.5s ease-in-out;
+}
+
+/* Containers */
+.container, .container-fluid {
     display: flex;
     background-color: transparent;
     color: var(--text-color);
@@ -87,56 +174,79 @@ a {
     text-align: center;
 }
 
-body h1, h2, h3, h4, h5, p, a {
-    text-shadow: 2px 3px 2px var(--shadow-color);
-    text-align: center;
+#hItems {
+    justify-content: space-between;
 }
 
-body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark p, body.dark a {
-    text-shadow: 2px 3px 2px var(--shadow-color-dark);
-    text-align: center;
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
 }
 
-h1 {
-    color: var(--bg-primary);
-    font-size: 4rem;
+/* Navigation */
+.navbar>.container-fluid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
-h1, .display-1, .display-2, .display-3 {
-    padding: 2rem;
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-around;
 }
 
-h2, h3, h4 {
+.nav-underline .active {
+    color: var(--bg-primary) !important;
+}
+
+.nav-underline .active:hover {
+    color: var(--text-color) !important;
+}
+
+.nav-underline .nav-link {
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-item a:hover {
     color: var(--bg-secondary);
-    font-size: 2rem;
+    font-weight: 700;
 }
 
-h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .form-label{
-    animation: fadeIn 3s ease-in-out;
-}
+.nav-link.active {
+    font-weight: bold;
+    color: var(--text-color);
+    border-bottom: 2px solid red;
+}  
 
-p.lead {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    animation: fadeIn 5s ease-in-out;
-}
-
-main iframe {
+/* Main Content */
+iframe {
     max-width: auto;
-    width: 768px;
-    height: 432px;
     margin: auto;
+    width: 720px; 
+    height: 405px;
     border-radius: 8px;
     box-shadow: 0px 0px 1rem var(--box-shadow);
 }
 
-label.btn:hover {
-    border-color: var(--text-color) !important;
-    color: var(--text-color) !important;
-}
-
-label {
-    padding: 1rem;
+/* Footer */
+#checkOut {
+    display: flex;
+    align-items: baseline;
 }
 
 footer {
@@ -147,6 +257,8 @@ footer {
 footer .container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
     padding: 1rem;
 }
 
@@ -154,25 +266,18 @@ footer .container {
     text-align: center;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .video-links, .playlist-links {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
+    padding-block: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
 }
 
 .video-links a, .playlist-links a {
     margin-bottom: 1rem;
-    padding: 0.5rem;
-    border-radius: 1rem;
+    padding-block: 0.5rem;
+    border-radius: 15px;
     color: var(--bg-primary);
     transition: all 0.5s ease-in-out;
 }
@@ -182,30 +287,12 @@ footer .container {
     color: var(--text-color);
 }
 
-.navbar-collapse {
-    align-items: center;
-    justify-content: space-around;
+/* Forms */
+h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .form-label {
+    animation: fadeIn 3s ease-in-out;
 }
 
-.nav a {
-    font-weight: bold;
-    color: var(--bg-primary);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: all 0.5s ease-in-out;
-}
-
-.nav a:hover {
-    color: var(--bg-secondary);
-    font-weight: 700;
-}
-
-.display-1, .display-2, .display-3 {
-    color: var(--bg-secondary);
-    font-weight: 400;
-}
-
+/* Switch */
 #swicher {
     margin: 0.5rem;
 }
@@ -223,11 +310,11 @@ footer .container {
     height: 0;
 }
 
-.switch input:checked+.slider {
+.switch input:checked + .slider {
     background-color: #000000;
 }
 
-.switch input:checked+.slider:before {
+.switch input:checked + .slider:before {
     transform: translateX(20px);
     background-color: transparent;
     border-radius: 50%;
@@ -264,6 +351,7 @@ footer .container {
     line-height: 16px;
 }
 
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -273,6 +361,8 @@ footer .container {
         opacity: 1;
     }
 }
+
+/* Media Queries */
 
 @media (max-width: 600px) {
     header .container, header .container-fluid {
@@ -287,7 +377,7 @@ footer .container {
     #playlistContainer {
         flex-direction: column;
     }
-    
+
     .container-fluid {
         flex-direction: column;
     }
@@ -296,21 +386,19 @@ footer .container {
         flex-direction: column;
         align-items: center;
     }
-}
 
-@media screen and (max-width: 600px) {
-    main iframe {
-        width: 400px !important;
-        height: 200px !important;
+    iframe {
+        width: 400px;
+        height: 200px;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .container-fluid {
         flex-direction: column;
     }
 
-    main iframe {
+    iframe {
         width: 960px;
         height: 540px;
     }
@@ -321,7 +409,7 @@ footer .container {
     }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 2800px) {
     html {
         font-size: 250%;
     }
@@ -329,12 +417,12 @@ footer .container {
     img {
         width: 300px;
     }
-    
+
     nav a {
         font-size: larger !important;
     }
 
-    main iframe {
+    iframe {
         width: 1600px;
         height: 900px;
     }
@@ -342,7 +430,7 @@ footer .container {
     .video-links, .playlist-links {
         font-size: 2rem;
     }
-    
+
     .switch {
         width: 6.5em;
         height: 3em;
@@ -358,11 +446,12 @@ footer .container {
         line-height: 2em;
     }
 
-    .switch input:checked+.slider:before {
+    .switch input:checked + .slider:before {
         transform: translateX(3em);
     }
-    
+
     .btn {
         transform: scale(1.5);
     }
 }
+

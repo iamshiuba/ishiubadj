@@ -1,11 +1,13 @@
 const translations = {
   en: {
+    Translations: "Translations",
     greeting: "Hello, world!",
     mainMessage:
       "This is my first website built from scratch. I started coding in August 2024 and finished it in October 2024.<br>For now, there are only a few things to check out: some videos, an about page, a news page, and you can visit my social networks in the website's footer.",
     highlight: "Highlights",
     hDescription:
       "A list of YouTube videos to watch here or on my Official Artist Channel.",
+    prdBy: "Powered by IamSHIUBA",
     footer: "All rights reserved.",
     follow: "Check out:",
     streaming: "Streaming",
@@ -21,12 +23,14 @@ const translations = {
     newsTitle: "News",
   },
   br: {
+    Translations: "Idiomas",
     greeting: "Olá, mundo!",
     mainMessage:
       "Este é meu primeiro site construído do zero. Comecei a programá-lo em agosto de 2024 e terminei em outubro de 2024.<br>Por enquanto, há apenas algumas coisas para conferir: alguns vídeos, uma página sobre, uma página de notícias, e você pode visitar minhas redes sociais no rodapé do site.",
     highlight: "Destaques",
     hDescription:
       "Uma lista de vídeos do YouTube para assistir aqui ou no meu canal oficial do artista.",
+    prdBy: "Desenvolvido por IamSHIUBA",
     footer: "Todos os direitos reservados.",
     follow: "Confira:",
     streaming: "Streaming",
@@ -42,12 +46,14 @@ const translations = {
     newsTitle: "Notícias",
   },
   jp: {
+    Translations: "言語",
     greeting: "こんにちは、世界！",
     mainMessage:
       "これは私がゼロから作った最初のウェブサイトです。2024年8月にコーディングを始め、2024年10月に完成させました。<br>現時点では、いくつかのビデオ、概要ページ、ニュースページをご覧いただけます。また、ウェブサイトのフッターにある私のSNSもご覧ください。",
     highlight: "ハイライト",
     hDescription:
       "ここで、または私の公式アーティストチャンネルで視聴できるYouTubeビデオのリストです。",
+    prdBy: "IamSHIUBAによって提供",
     footer: "全著作権所有。",
     follow: "チェックアウト:",
     streaming: "ストリーミング",

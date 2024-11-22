@@ -1,3 +1,15 @@
+// Obtém a URL atual da página
+const currentPage = window.location.pathname;
+// Itera por todos os links na navegação
+document.querySelectorAll('.nav-link').forEach(link => {
+  // Verifica se o href do link corresponde ao caminho da página atual
+  if (link.getAttribute('href') === currentPage) {
+    link.classList.add('active'); // Adiciona 'active' ao link correspondente
+  } else {
+    link.classList.remove('active'); // Garante que outros links não tenham a classe
+  }
+});
+
 function initializeLanguage() {
   const selectedLanguage = localStorage.getItem("selectedLanguage") || "en";
   setLanguage(selectedLanguage);
