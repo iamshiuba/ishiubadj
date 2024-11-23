@@ -11,18 +11,17 @@ This Django project aims to facilitate on making updates of the files. It replac
 ## Installation
 
 - Clone the repository: git clone https://github.com/iamshiuba/ishiubadj.git
-- Install dependencies: pip install -r requirements.txt
-- Run migrations: python manage.py migrate
-- Run the development server: python manage.py runserver
+- Install virtual python environment: ``python -m venv venv`` (Recommended)
+- Install dependencies: ``pip install -r requirements.txt``
+- Run migrations: ``python manage.py migrate``
+- Run the development server: ``python manage.py runserver``
 
 ## Project Structure
 
-- home: main application of the project
-- videos: application for managing videos
-- about: application for project information
-- news: application for news
-- partials: application for reusable components
-
+- **layout**: defines the layout of all templates
+- **project**: core of the web project that contains the templates ``(pages, partials)``
+- **pages**: templates that contain the pages
+- **partials**: templates that contain reusable components
 
 ## Contributions
 
