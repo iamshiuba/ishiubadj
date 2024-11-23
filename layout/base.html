@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load django_bootstrap5 %} {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iSHIUBA - {{ title }}</title>
+    <link
+      rel="shortcut icon"
+      href="{% static 'img/ishiubafavicon.png' %}"
+      type="image/x-icon"
+    />
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/global.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+    />
+  </head>
+  <body>
+    {% include 'partials/header.html' %}
+    <main>{% block content %} {% endblock content %}</main>
+    {% include 'partials/footer.html' %}
+    <script src="{% static 'js/global.js' %}"></script>
+    <script src="{% static 'js/translations.js' %}"></script>
+    {% bootstrap_javascript %}
+  </body>
+</html>

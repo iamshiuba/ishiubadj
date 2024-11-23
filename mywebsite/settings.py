@@ -42,11 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
-    'videos',
-    'about',
-    'news',
-    'partials',
+    'project',
     'django_bootstrap5',
 ]
 
@@ -66,7 +62,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'partials/templates'),
+            os.path.join(BASE_DIR, 'layout'),
             os.path.join(BASE_DIR, 'templates'),
             ],
         'APP_DIRS': True,
