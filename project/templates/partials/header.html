@@ -24,27 +24,28 @@
         </label>
         <ul class="nav nav-underline">
           <li class="nav-item">
-            <a href="/" class="nav-link active" data-translate="Homepage"
-              >Homepage</a
-            >
+            <a href="/" class="nav-link active" data-translate="Homepage"></a>
           </li>
           <li class="nav-item">
             <a
               href="{% url 'streaming' %}"
               class="nav-link"
               data-translate="Streaming"
-              >Streaming</a
-            >
+            ></a>
           </li>
           <li class="nav-item">
-            <a href="{% url 'about' %}" class="nav-link" data-translate="About"
-              >About</a
-            >
+            <a
+              href="{% url 'about' %}"
+              class="nav-link"
+              data-translate="About"
+            ></a>
           </li>
           <li class="nav-item">
-            <a href="{% url 'news' %}" class="nav-link" data-translate="News"
-              >News</a
-            >
+            <a
+              href="{% url 'news' %}"
+              class="nav-link"
+              data-translate="News"
+            ></a>
           </li>
         </ul>
       </div>
@@ -60,7 +61,9 @@
         aria-label="Change Language"
       >
         <span class="fa-solid fa-language"></span>
-        <label for="#langselect"><span data-translate="Translations">Translations</span></label>
+        <label for="#langselect"
+          ><span data-translate="Translations"></span
+        ></label>
       </button>
       <div class="collapse p-1" id="language">
         <input

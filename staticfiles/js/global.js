@@ -1,12 +1,9 @@
-// Obtém a URL atual da página
 const currentPage = window.location.pathname;
-// Itera por todos os links na navegação
-document.querySelectorAll('.nav-link').forEach(link => {
-  // Verifica se o href do link corresponde ao caminho da página atual
-  if (link.getAttribute('href') === currentPage) {
-    link.classList.add('active'); // Adiciona 'active' ao link correspondente
+document.querySelectorAll(".nav-link").forEach((link) => {
+  if (link.getAttribute("href") === currentPage) {
+    link.classList.add("active");
   } else {
-    link.classList.remove('active'); // Garante que outros links não tenham a classe
+    link.classList.remove("active");
   }
 });
 
@@ -103,8 +100,6 @@ function loadPlaylists() {
           <iframe
             src="https://www.youtube.com/embed/videoseries?list=${playlist.playlistId}"
             title="${playlist.title}"
-            width="768px"
-            height="432px"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"

@@ -237,8 +237,8 @@ img:hover {
 iframe {
     max-width: auto;
     margin: auto;
-    width: 720px;
-    height: 405px;
+    width: 750px !important;
+    height: 405px !important;
     border-radius: 8px;
     box-shadow: 0px 0px 1rem var(--box-shadow);
 }
@@ -270,14 +270,14 @@ footer .container {
 .video-links, .playlist-links {
     display: flex;
     flex-direction: column;
-    padding-block: 0.5rem;
+    padding: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
 }
 
 .video-links a, .playlist-links a {
     margin-bottom: 1rem;
-    padding-block: 0.5rem;
+    padding: 0.5rem;
     border-radius: 15px;
     color: var(--bg-primary);
     transition: all 0.5s ease-in-out;
@@ -389,8 +389,8 @@ h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .form-label {
     }
 
     iframe {
-        width: 400px;
-        height: 200px;
+        width: 400px !important;
+        height: 200px !important;
     }
 }
 
