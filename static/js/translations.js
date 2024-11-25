@@ -1,9 +1,12 @@
 const translations = {
   en: {
+    checkOut: "Check Out",
     Translations: "Languages",
     greeting: "Hello, world!",
     mainMessage:
-      "This is my first website built from scratch. I started coding in August 2024 and finished it in October 2024.<br>For now, there are only a few things to check out: some videos, an about page, a news page, and you can visit my social networks in the website's footer.",
+      "This is my first website built from scratch. I started coding in August 2024 and finished it in October 2024.",
+    subMessage:
+      "For now, there are only a few things to check out: some videos, an about page, a news page, and you can visit my social networks in the website's footer.",
     highlight: "Highlights",
     hDescription:
       "A list of YouTube videos to watch here or on my Official Artist Channel.",
@@ -22,10 +25,13 @@ const translations = {
     newsMessage: "More news coming soon! <br> Enjoy!",
   },
   br: {
+    checkOut: "Confira",
     Translations: "Idiomas",
     greeting: "Olá, mundo!",
     mainMessage:
-      "Este é meu primeiro site construído do zero. Comecei a programá-lo em agosto de 2024 e terminei em outubro de 2024.<br>Por enquanto, há apenas algumas coisas para conferir: alguns vídeos, uma página sobre, uma página de notícias, e você pode visitar minhas redes sociais no rodapé do site.",
+      "Este é meu primeiro site construído do zero. Comecei a programá-lo em agosto de 2024 e terminei em outubro de 2024.",
+    subMessage:
+      "Por enquanto, há apenas algumas coisas para conferir: alguns vídeos, uma página sobre, uma página de notícias, e você pode visitar minhas redes sociais no rodapé do site.",
     highlight: "Destaques",
     hDescription:
       "Uma lista de vídeos do YouTube para assistir aqui ou no meu canal oficial do artista.",
@@ -44,10 +50,13 @@ const translations = {
     newsMessage: "Em breve, mais notícias! <br> Aproveite!",
   },
   jp: {
+    checkOut: "チェックアウト",
     Translations: "言語",
     greeting: "こんにちは、世界！",
     mainMessage:
-      "これは私がゼロから作った最初のウェブサイトです。2024年8月にコーディングを始め、2024年10月に完成させました。<br>現時点では、いくつかのビデオ、概要ページ、ニュースページをご覧いただけます。また、ウェブサイトのフッターにある私のSNSもご覧ください。",
+      "これは私がゼロから作った最初のウェブサイトです。2024年8月にコーディングを始め、2024年10月に完成させました。",
+    subMessage:
+      "現時点では、いくつかのビデオ、概要ページ、ニュースページをご覧いただけます。また、ウェブサイトのフッターにある私のSNSもご覧ください。",
     highlight: "ハイライト",
     hDescription:
       "ここで、または私の公式アーティストチャンネルで視聴できるYouTubeビデオのリストです。",

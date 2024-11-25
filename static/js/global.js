@@ -105,16 +105,14 @@ function loadPlaylists() {
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
           ></iframe>
-          <div class="playlist-links">
-            <a
-              rel="noopener"
-              class="link"
-              href="${playlist.url}"
-              target="_blank"
-            >
-              <strong>${playlist.title}</strong>
-            </a>
-          </div>
+          <a
+            rel="noopener"
+            class="playlist-links"
+            href="${playlist.url}"
+            target="_blank"
+          >
+          ${playlist.title}
+          </a>
         `;
 
     playlistContainer.appendChild(colDiv);

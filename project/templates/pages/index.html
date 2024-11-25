@@ -1,33 +1,34 @@
 {% extends "base.html" %} {% block content %}
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="d-block">
-      <div id="main">
-        <h1 data-translate="greeting"></h1>
-        <p class="lead" data-translate="mainMessage"></p>
-      </div>
-    </div>
-    <div class="d-block">
-      <p class="display-3" data-translate="highlight"></p>
+    <section class="col-6">
+      <h1 data-translate="greeting"></h1>
+      <p class="lead" data-translate="mainMessage"></p>
+      <p class="lead" data-translate="subMessage"></p>
+    </section>
+    <section>
+      <h2 class="display-2" data-translate="highlight"></h2>
       <p class="lead" data-translate="hDescription"></p>
-      <div class="video-links">
-        <iframe
-          src="https://www.youtube.com/embed/videoseries?si=F6CnMkx4AUkuURA_&amp;list=OLAK5uy_laLvEldekJ_qsP5DMbG-PYcEW3oQEYu_Q"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <a
-          class="link"
-          rel="noopener"
-          target="_blank"
-          href="https://www.youtube.com/playlist?list=OLAK5uy_laLvEldekJ_qsP5DMbG-PYcEW3oQEYu_Q"
-          data-translate="checkOut"
-        ></a>
+      <div class="row">
+        <div class="col-auto">
+          <iframe
+            src="https://www.youtube.com/embed/videoseries?si=F6CnMkx4AUkuURA_&amp;list=OLAK5uy_laLvEldekJ_qsP5DMbG-PYcEW3oQEYu_Q"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <a
+            class="video-links"
+            rel="noopener"
+            target="_blank"
+            href="https://www.youtube.com/playlist?list=OLAK5uy_laLvEldekJ_qsP5DMbG-PYcEW3oQEYu_Q"
+            data-translate="checkOut"
+          ></a>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </div>
 {% endblock content %}
