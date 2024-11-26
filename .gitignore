@@ -402,3 +402,5 @@ FodyWeavers.xsd
 directory_env/
 
 .vscode/
+
+.staticfiles/

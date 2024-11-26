@@ -10,6 +10,10 @@ def get_title(request):
         return "About"
     elif request.path == "/news":
         return "News"
+    elif request.path == "/tos":
+        return "Terms of Service"
+    elif request.path == "/privacy":
+        return "Privacy Policy"
 
 
 def index(request):
@@ -30,3 +34,13 @@ def news(request):
 def about(request):
     title = get_title(request)
     return render(request, "pages/about.html", {"title": title})
+
+
+def tos(request):
+    title = get_title(request)
+    return render(request, "pages/tos.html", {"title": title})
+
+
+def privacy(request):
+    title = get_title(request)
+    return render(request, "pages/privacy.html", {"title": title})

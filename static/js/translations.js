@@ -23,6 +23,8 @@ const translations = {
     News: "News",
     newsTitle: "News",
     newsMessage: "More news coming soon! <br> Enjoy!",
+    tos: "Terms of Service",
+    privacy: "Privacy Policy",
   },
   br: {
     checkOut: "Confira",
@@ -48,6 +50,8 @@ const translations = {
     News: "Notícias",
     newsTitle: "Notícias",
     newsMessage: "Em breve, mais notícias! <br> Aproveite!",
+    tos: "Termos de Serviço",
+    privacy: "Política de Privacidade",
   },
   jp: {
     checkOut: "チェックアウト",
@@ -73,5 +77,7 @@ const translations = {
     News: "ニュース",
     newsTitle: "最新ニュース",
     newsMessage: "しばらくお待ち下さい。 <br> お楽しみに!",
+    tos: "利用規約",
+    privacy: "プライベートポリシー",
   },
 };
