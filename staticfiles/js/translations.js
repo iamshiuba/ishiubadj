@@ -50,7 +50,7 @@ const translations = {
     News: "Notícias",
     newsTitle: "Notícias",
     newsMessage: "Em breve, mais notícias! <br> Aproveite!",
-    tos: "Termos de Serviços",
+    tos: "Termos de Serviço",
     privacy: "Política de Privacidade",
   },
   jp: {

@@ -64,7 +64,11 @@ h1, .display-1, .display-2, .display-3 {
 p.lead {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 5s ease-in;
+}
+
+p {
+    animation: fadeIn 5s ease-in;
 }
 
 a {
@@ -114,6 +118,17 @@ button {
     padding: 0.5rem;
     padding-bottom: 1rem;
     transition: all 0.5s ease-in-out;
+}
+
+#tos, #privacy {
+    color: var(--text-color);
+    transform: scale(1.0);
+}
+
+#tos:hover, #privacy:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
 }
 
 .btn:hover, i:hover {
@@ -177,13 +192,14 @@ img:hover {
 
 .row {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
 }
 
 /* Navigation */
-.navbar>.container-fluid {
+.navbar>.container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -407,7 +423,7 @@ h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .form-label {
 }
 
 @media screen and (min-width: 1024px) {
-    .container-fluid {
+    .container {
         flex-direction: column;
     }
 
