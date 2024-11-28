@@ -64,11 +64,11 @@ h1, .display-1, .display-2, .display-3 {
 p.lead {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    animation: fadeIn 5s ease-in;
+    animation: fadeIn 3.5s ease-in;
 }
 
 p {
-    animation: fadeIn 5s ease-in;
+    animation: fadeIn 3.5s ease-in;
 }
 
 a {
