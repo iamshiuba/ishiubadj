@@ -64,11 +64,11 @@ h1, .display-1, .display-2, .display-3 {
 p.lead {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    animation: fadeIn 5s ease-in;
+    animation: fadeIn 3.5s ease-in;
 }
 
 p {
-    animation: fadeIn 5s ease-in;
+    animation: fadeIn 3.5s ease-in;
 }
 
 a {
@@ -192,14 +192,13 @@ img:hover {
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
 }
 
 /* Navigation */
-.navbar>.container {
+.navbar>.container-fluid {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -423,7 +422,7 @@ h1, h2, h3, h4, h5, .display-1, .display-2, .display-3, .form-label {
 }
 
 @media screen and (min-width: 1024px) {
-    .container {
+    .container-fluid {
         flex-direction: column;
     }
 
