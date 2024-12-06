@@ -146,8 +146,8 @@ const translations = {
     jp: "4. 責任の制限",
   },
   tosLoLdesc: {
-    en: "This site is provided \"as is.\" We do not guarantee uninterrupted availability or freedom from errors. We are not liable for any damages resulting from the use of this site.",
-    br: "Este site é fornecido \"como é.\" Nós não garantimos disponibilidade ininterrupta ou livre de erros. Nós não nos responsabilizamos por quaisquer danos resultantes do uso deste site.",
+    en: 'This site is provided "as is." We do not guarantee uninterrupted availability or freedom from errors. We are not liable for any damages resulting from the use of this site.',
+    br: 'Este site é fornecido "como é." Nós não garantimos disponibilidade ininterrupta ou livre de erros. Nós não nos responsabilizamos por quaisquer danos resultantes do uso deste site.',
     jp: "このサイトは、「現状であります。」私たちは、サイトの使用によって生じる損害に対して責任を負いません。",
   },
   tosCttT: {
@@ -242,10 +242,10 @@ function initializeLanguage() {
   const selectedLanguage = localStorage.getItem("selectedLanguage") || "en";
   setLanguage(selectedLanguage);
 
-  const radioButton = document.querySelector(
-    `input[name="btnradio"][value="${selectedLanguage}"]`
+  const button = document.querySelector(
+    `button[data-language="${selectedLanguage}"]`
   );
-  if (radioButton) radioButton.checked = true;
+  if (button) button.classList.add("active");
 }
 
 // Alteração para acessar o objeto organizado por chaves
@@ -266,9 +266,13 @@ function setLanguage(language) {
 // Eventos e Inicialização
 document.addEventListener("DOMContentLoaded", () => {
   initializeLanguage();
-  document
-    .getElementById("language-switcher")
-    .addEventListener("change", (e) => {
-      if (e.target.name === "btnradio") setLanguage(e.target.value);
-    });
+  document.getElementById("language").addEventListener("click", (e) => {
+    if (e.target.tagName === "BUTTON") {
+      setLanguage(e.target.dataset.language);
+      document
+        .querySelectorAll("#language button")
+        .forEach((btn) => btn.classList.remove("active"));
+      e.target.classList.add("active");
+    }
+  });
 });
