@@ -1,17 +1,23 @@
 {% extends "base.html" %} {% block content %}
-<h1 data-translate="newsTitle">News</h1>
-<p class="lead" data-translate="newsMessage"></p>
 <div class="container-fluid">
-  <iframe
-    id="JotFormIFrame-243416452242046"
-    title="My first article"
-    onload="window.parent.scrollTo(0,0)"
-    allowtransparency="true"
-    src="https://form.jotform.com/243416452242046"
-    frameborder="0"
-    scrolling="no"
-  >
-  </iframe>
+  <div class="card">
+    <h1 data-translate="newsTitle">News</h1>
+    <p class="lead" data-translate="newsMessage"></p>
+    <div class="card-body">
+      <iframe
+        id="JotFormIFrame-243416452242046"
+        title="My first article"
+        style="width: 85vw; height: 85vh"
+        onload="window.parent.scrollTo(0,0)"
+        allowtransparency="true"
+        src="https://form.jotform.com/243416452242046"
+        frameborder="0"
+        scrolling="no"
+      >
+      </iframe>
+    </div>
+  </div>
+
   <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
   <script>
     window.jotformEmbedHandler(

@@ -52,7 +52,7 @@ const translations = {
   },
   hDescription: {
     en: "A list of YouTube videos to watch here or on my Official Artist Channel.",
-    br: "Uma lista de vídeos do YouTube para assistir aqui ou na minha canal oficial.",
+    br: "Uma lista de vídeos do YouTube para assistir aqui ou no meu Canal Oficial do Artista.",
     jp: "ここでまたは公式アーティストチャンネルで視聴できるYouTubeビデオのリスト。",
   },
   streaming: {
