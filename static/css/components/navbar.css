@@ -1,0 +1,77 @@
+.navbar-toggler {
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    background-color: var(--bg-primary);
+    color: var(--bg-primary);
+    transition: all 0.5s ease-in-out;
+}
+
+#langselect {
+    padding-block: 1rem;
+}
+
+#langselect:hover,
+.button:hover {
+    background-color: var(--hover-color);
+}
+
+.logo {
+    margin-left: 1rem;
+    width: 100px;
+    transition: all 1.5s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all 1.5s ease-in-out;
+}
+
+.navbar>.container-fluid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-underline .active {
+    color: var(--bg-primary) !important;
+}
+
+.nav-underline .active:hover {
+    color: var(--text-color) !important;
+}
+
+.nav-underline .nav-link {
+    color: var(--text-color);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    font-weight: bold;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: var(--bg-secondary);
+    font-weight: 700;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: var(--text-color);
+    border-bottom: 2px solid red;
+}
+
