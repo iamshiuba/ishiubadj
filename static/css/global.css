@@ -28,6 +28,7 @@ body.dark {
     --bg-primary: red;
     --bg-secondary: #ff3700;
     --text-color: white;
+    --hover-color: none;
     --shadow-color: #66070981;
     --box-shadow: #66070998;
 }
@@ -106,16 +107,6 @@ i {
     transition: all 0.5s ease-in-out;
 }
 
-#tos, #privacy {
-    color: var(--text-color);
-    transform: scale(1.0);
-}
-
-#tos:hover, #privacy:hover {
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    transform: scale(1.1);
-}
 
 .btn:hover, i:hover {
     transform: scale(1.1);

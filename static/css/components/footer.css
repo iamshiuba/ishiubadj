@@ -1,6 +1,8 @@
+
 footer {
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 footer .container {
@@ -9,4 +11,19 @@ footer .container {
     flex-wrap: wrap;
     align-items: stretch;
     padding: 1rem;
+}
+
+#tos, #privacy {
+    color: var(--text-color);
+    transform: scale(1.0);
+}
+
+#tos:hover, #privacy:hover {
+    color: var(--bg-primary);
+    transform: scale(0.9);
+}
+
+#tospriv {
+    display: flex;
+    justify-content: space-evenly;
 }
