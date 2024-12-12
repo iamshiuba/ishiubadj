@@ -36,14 +36,14 @@ const translations = {
     jp: "こんにちは、世界！",
   },
   mainMessage: {
-    en: "This is my first website built from scratch. I started coding in August 2024 and finished it in October 2024.",
-    br: "Este é meu primeiro site construído do zero. Comecei a programá-lo em agosto de 2024 e terminei em outubro de 2024.",
-    jp: "これは私がゼロから作った最初のウェブサイトです。2024年8月にコーディングを始め、2024年10月に完成させました。",
+    en: "Welcome to my first project in Django. It is in constant development and I'm always looking for improvements.",
+    br: "Bem-vindo(a) ao meu primeiro projeto em Django. O site está em constante desenvolvimento e estou sempre buscando melhorias.",
+    jp: "私の最初のDjangoプロジェクトへようこそ。このサイトは常に進化していて、私はいつも改善を目指しています。",
   },
   subMessage: {
-    en: "For now, there are only a few things to check out: some videos, an about page, a news page, and you can visit my social networks in the website's footer.",
-    br: "Por enquanto, há apenas algumas coisas para conferir: alguns vídeos, uma página sobre, uma página de notícias, e você pode visitar minhas redes sociais no rodapé do site.",
-    jp: "現時点では、いくつかのビデオ、概要ページ、ニュースページをご覧いただけます。また、ウェブサイトのフッターにある私のSNSもご覧ください。",
+    en: "For now, there are just a few things to check: some videos, an about page, a news page with articles, and you can visit my social media in the footer of the website.",
+    br: "Por enquanto, há apenas algumas coisas para conferir: alguns vídeos, uma página sobre, uma página de notícias com artigos, e você pode visitar minhas redes sociais no rodapé do site.",
+    jp: "今のところ、チェックするべきことがいくつかあります。いくつかの動画、概要ページ、記事が載ったニュースページ、そしてウェブサイトのフッターから私のソーシャルメディアにアクセスできます。",
   },
   highlight: {
     en: "Highlights",
@@ -81,9 +81,9 @@ const translations = {
     jp: "概要",
   },
   aboutMessage: {
-    en: "I made this website for fun. I was taking a programming course and learning how to build a simple yet cool website.<br>Then, after a few weeks, I started my own web project. To be honest, I used AI for some parts since I'm still new to programming.<br>I used it for the JavaScript part and to improve some of my HTML/CSS code, but of course, I didn't make it 100% using AI.<br>Thank you for visiting my website!",
-    br: "Fiz este site por diversão. Estava fazendo um curso de programação e aprendendo a criar um site simples, mas legal.<br>Depois de algumas semanas, comecei meu próprio projeto web. Para ser sincero, usei IA em algumas partes, pois ainda sou iniciante em programação.<br>Usei para a parte de JavaScript e para melhorar meu código HTML/CSS, mas, claro, não o fiz 100% com IA.<br>Obrigado pela visita ao meu site!",
-    jp: "このウェブサイトは趣味で作りました。プログラミングコースを受講中で、シンプルながらもクールなウェブサイトの作り方を学んでいました。<br>数週間後、自分のウェブプロジェクトを始めました。正直に言うと、プログラミングはまだ初心者なので、AIをいくつかの部分で使用しました。<br>JavaScriptの部分と、HTML/CSSコードの改善に使用しましたが、もちろん100％AIで作ったわけではありません。<br>ウェブサイトへのご訪問、ありがとうございます！",
+    en: "After struggling to create my basic website using only HTML, CSS, and JavaScript, I decided to take on a new challenge and build a version using the Django framework. It wasn't easy, but I learned a lot from the experience. I had to troubleshoot some issues and figure out why things weren't working as expected. But eventually, I got it done! I'm proud to say that I now have a more robust and scalable website. Thanks for stopping by and taking a look around.",
+    br: "Depois de quebrar muito a cabeça com meu site básico usando apenas html, css e javascript, resolvi fazer uma versão usando o framework Django. Demorei um tempo pra conseguir fazê-lo, e mais tempo ainda pra entender porque não conseguia implementá-lo corretamente. Porém, depois descobri que não havia configurado o django pra achar meus arquivos estaticos, e após isso pude fazer a implementação sem maiores problemas.<br>Obrigado pela visita ao meu site!",
+    jp: "HTML、CSS、JavaScriptのみで作成した基本的なサイトに苦労した後、Djangoフレームワークを使用して新しいバージョンを作成することにしました。実現するのに時間がかかりましたが、問題を解決するために時間を費やしました。ただし、Djangoが私の静的ファイルを認識していないことに気づき、設定を変更することで問題を解決することができました。<br>私のサイトを訪ねてくれてありがとうございます。",
   },
   newsTitle: {
     en: "News",

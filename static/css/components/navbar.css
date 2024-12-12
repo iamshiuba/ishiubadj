@@ -1,14 +1,43 @@
+header {
+    background: #80808010;
+
+    background: linear-gradient(90deg, #80808010 5%, #ffb3b3 100%);
+
+    background: -moz-linear-gradient(90deg, #80808010 5%, #ffb3b3 100%);
+
+    background: -webkit-linear-gradient(90deg, #80808010 5%, #ffb3b3 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#80808010", endColorstr="#ffb3b3", GradientType=1);
+}
+
+body.dark header {
+    background: #70000010;
+
+    background: linear-gradient(90deg, #70000010 5%, #99000077 100%);
+
+    background: -moz-linear-gradient(90deg, #70000010 5%, #99000077 100%);
+
+    background: -webkit-linear-gradient(90deg, #70000010 5%, #99000077 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#70000010", endColorstr="#99000077", GradientType=1);
+}
+
 .navbar-toggler {
     border: none;
     border-radius: 5px;
     padding: 0.5rem;
-    background-color: var(--bg-primary);
-    color: var(--bg-primary);
+    background-color: #ff00007e;
+    color: transparent;
     transition: all 0.5s ease-in-out;
 }
 
+.navbar-toggler:hover {
+    border: none;
+    background-color: var(--bg-primary);
+}
+
 #langselect {
-    padding-block: 1rem;
+    padding: 1rem;
 }
 
 #langselect:hover,
@@ -80,3 +109,41 @@
     border-bottom: 2px solid red;
 }
 
+.fa-sun,
+.fa-moon {
+    cursor: pointer;
+    padding: 1em !important;
+    border: transparent;
+}
+
+.fa-sun:hover {
+    background-color: transparent;
+    color: var(--bg-secondary);
+    border: 3px solid hsla(15, 100%, 25%, 0.501);
+}
+
+.fa-moon:hover {
+    background-color: transparent;
+    color: hsl(231, 100%, 76%);
+    border: 3px solid hsla(231, 100%, 75%, 0.301);
+}
+
+.fi {
+    margin: .5em;
+    padding-inline: 1.3em;
+    transition: all 0.5s ease-in-out;
+}
+
+.fi:hover {
+    transform: scale(0.9);
+    box-shadow: 0 0 10px 5px var(--shadow-color);
+}
+
+.langclp {
+    border-radius: 5px;
+    background-color: #7777773a;
+}
+
+body.dark .langclp {
+    background-color: transparent;
+}

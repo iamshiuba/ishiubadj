@@ -1,3 +1,26 @@
+footer {
+    background: #ffb3b3;
+
+    background: linear-gradient(90deg, #ffb3b3 5%, #80808010 100%);
+
+    background: -moz-linear-gradient(90deg, #ffb3b3 5%, #80808010 100%);
+
+    background: -webkit-linear-gradient(90deg, #ffb3b3 5%, #80808010 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffb3b3", endColorstr="#80808010", GradientType=1);
+}
+
+body.dark footer {
+    background: #99000077;
+
+    background: linear-gradient(90deg, #99000077 25%, #70000010 100%);
+
+    background: -moz-linear-gradient(90deg, #99000077 25%, #70000010 100%);
+
+    background: -webkit-linear-gradient(90deg, #99000077 25%, #70000010 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#99000077", endColorstr="#70000010", GradientType=1);
+}
 
 footer {
     display: flex;
