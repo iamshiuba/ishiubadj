@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <script src="{% static 'js/ytbplaylist.js' %}"></script>
-<div id="youtube" class="container-fluid">
+<div id="youtube" class="container-fluid flex-column">
   <h1><span data-translate="streaming"></span></h1>
-  <div id="playlistContainer" class="container-fluid"></div>
+  <div id="playlistContainer" class="container"></div>
 </div>
 {% endblock %}

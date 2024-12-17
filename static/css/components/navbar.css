@@ -1,25 +1,21 @@
 header {
     background: #80808010;
-
     background: linear-gradient(90deg, #80808010 5%, #ffb3b3 100%);
-
     background: -moz-linear-gradient(90deg, #80808010 5%, #ffb3b3 100%);
-
     background: -webkit-linear-gradient(90deg, #80808010 5%, #ffb3b3 100%);
-
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#80808010", endColorstr="#ffb3b3", GradientType=1);
 }
 
 body.dark header {
     background: #70000010;
-
     background: linear-gradient(90deg, #70000010 5%, #99000077 100%);
-
     background: -moz-linear-gradient(90deg, #70000010 5%, #99000077 100%);
-
     background: -webkit-linear-gradient(90deg, #70000010 5%, #99000077 100%);
-
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#70000010", endColorstr="#99000077", GradientType=1);
+}
+
+.d-flex {
+    justify-content: flex-end;
 }
 
 .navbar-toggler {
@@ -28,7 +24,7 @@ body.dark header {
     padding: 0.5rem;
     background-color: #ff00007e;
     color: transparent;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar-toggler:hover {
@@ -48,15 +44,15 @@ body.dark header {
 .logo {
     margin-left: 1rem;
     width: 100px;
-    transition: all 1.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .logo:hover {
     transform: scale(1.1);
-    transition: all 1.5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
-.navbar>.container-fluid {
+.navbar>.container {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
@@ -83,7 +79,7 @@ body.dark header {
 
 .nav-underline .nav-link {
     color: var(--text-color);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-item {
@@ -95,7 +91,7 @@ body.dark header {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-item a:hover {
@@ -131,7 +127,7 @@ body.dark header {
 .fi {
     margin: .5em;
     padding-inline: 1.3em;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .fi:hover {

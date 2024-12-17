@@ -36,7 +36,7 @@ const translations = {
     jp: "こんにちは、世界！",
   },
   mainMessage: {
-    en: "Welcome to my first project in Django. It is in constant development and I'm always looking for improvements.",
+    en: "Welcome to my first Django project. It is in constant development and I'm always looking for improvements.",
     br: "Bem-vindo(a) ao meu primeiro projeto em Django. O site está em constante desenvolvimento e estou sempre buscando melhorias.",
     jp: "私の最初のDjangoプロジェクトへようこそ。このサイトは常に進化していて、私はいつも改善を目指しています。",
   },

@@ -15,20 +15,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
-    background: url('https://thomasblonde.com/cdn/shop/files/regift_1_3024x.gif?v=1700532523') center center / cover no-repeat fixed;
-    backdrop-filter: blur(5px);
-/*    background-color: var(--bg-color);*/
+
+    background-color: var(--bg-color);
     color: var(--text-color);
 }
 
 body.dark {
-    background: url('https://www.kapwing.com/resources/content/images/2020/12/desktop-background.gif') center center / cover no-repeat fixed;
-    backdrop-filter: blur(5px) brightness(40%);
-/*    --bg-color: black;*/
+
+   --bg-color: black;
     --bg-primary: red;
     --bg-secondary: #ff3700;
     --text-color: white;
@@ -86,7 +83,7 @@ button {
     border-radius: 5px;
     background-color: transparent;
     color: var(--bg-primary);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .button,
@@ -105,8 +102,7 @@ button {
     color: var(--bg-primary);
     margin: 0.5rem;
     padding: 0.5rem;
-    padding-bottom: 1rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 i {
@@ -125,9 +121,9 @@ button:hover {
 }
 
 /* Containers */
-.container, .container-fluid {
+.container-fluid {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: transparent;
     color: var(--text-color);
     justify-content: center;
@@ -160,13 +156,6 @@ iframe {
     box-shadow: 0 0 10px 5px var(--box-shadow);
 }
 
-/* Footer */
-#checkOut {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}
-
 #playlistContainer {
     display: flex;
     flex-direction: row;
@@ -187,11 +176,6 @@ iframe {
 
 /* Media Queries */
 @media screen and (min-width: 3840px) {
-
-    nav a {
-        font-size: larger !important;
-    }
-
     iframe {
         width: 1600px;
         height: 900px;
@@ -209,7 +193,7 @@ iframe {
 }
 
 @media screen and (max-width: 1024px) {
-    .container-fluid {
+    .container {
         flex-direction: column;
     }
 
@@ -218,7 +202,7 @@ iframe {
         height: 215px;
     }
 
-    footer .container {
+    .container footer {
         flex-direction: row;
     }
 
@@ -234,8 +218,8 @@ iframe {
 }
 
 @media screen and (max-width: 700px) {
-    ul.nav.nav-underline {
-        justify-content: center !important;
+    .nav.nav-underline ul {
+        justify-content: center;
     }
 
     iframe {

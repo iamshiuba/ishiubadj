@@ -1,52 +1,62 @@
 footer {
     background: #ffb3b3;
-
     background: linear-gradient(90deg, #ffb3b3 5%, #80808010 100%);
-
     background: -moz-linear-gradient(90deg, #ffb3b3 5%, #80808010 100%);
-
     background: -webkit-linear-gradient(90deg, #ffb3b3 5%, #80808010 100%);
-
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#ffb3b3", endColorstr="#80808010", GradientType=1);
+
+    padding: 1em;
 }
 
 body.dark footer {
     background: #99000077;
-
     background: linear-gradient(90deg, #99000077 25%, #70000010 100%);
-
     background: -moz-linear-gradient(90deg, #99000077 25%, #70000010 100%);
-
     background: -webkit-linear-gradient(90deg, #99000077 25%, #70000010 100%);
-
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#99000077", endColorstr="#70000010", GradientType=1);
-}
 
-footer {
-    display: flex;
-    flex-direction: column;
     padding: 1em;
 }
 
 footer .container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: stretch;
     padding: 1rem;
 }
 
-#tos, #privacy {
-    color: var(--text-color);
-    transform: scale(1.0);
+.d-flex footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-#tos:hover, #privacy:hover {
+#tos,
+#privacy {
+    color: var(--text-color);
+    transition: all 0.3s ease; /* Transição mais suave */
+    transform: scale(1);
+}
+
+#tos:hover,
+#privacy:hover {
     color: var(--bg-primary);
     transform: scale(0.9);
 }
 
 #tospriv {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#checkOut {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }

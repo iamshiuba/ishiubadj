@@ -403,3 +403,4 @@ directory_env/
 
 .vscode/
 /staticfiles
+/static/translations

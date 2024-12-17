@@ -19,7 +19,7 @@
           alt="shiuba"
         />
       </a>
-      <div class="collapse navbar-collapse" id="menu">
+      <div class="collapse navbar-collapse justify-content-end" id="menu">
         <ul id="pageURl" class="nav nav-underline">
           <li class="nav-item">
             <a href="/" class="nav-link active" data-translate="Homepage"> </a>
@@ -45,7 +45,65 @@
               data-translate="News"
             ></a>
           </li>
+          <li class="nav-item">
+            <a
+              href="{% url 'tos' %}"
+              id="tos"
+              class="nav-link"
+              target="_blank"
+              rel="noopener"
+              data-translate="tos"
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="{% url 'privacy' %}"
+              id="privacy"
+              class="nav-link"
+              target="_blank"
+              rel="noopener"
+              data-translate="privacy"
+            ></a>
+          </li>
         </ul>
+      </div>
+      <div class="d-flex col-lg-4">
+        <button
+          id="langselect"
+          class="icon"
+          type="button"
+          title="Change Language"
+          data-bs-toggle="collapse"
+          data-bs-target="#language"
+          aria-controls="menu"
+          aria-expanded="false"
+          aria-label="Change Language"
+        >
+          <span class="fa-solid fa-language"></span>
+          <label for="langselect"
+            ><span data-translate="Translations"></span
+          ></label>
+        </button>
+        <div class="langclp collapse p-1" id="language">
+          <button
+            type="button"
+            data-language="en"
+            title="English"
+            class="fi fi-us"
+          ></button>
+          <button
+            type="button"
+            data-language="br"
+            title="Português"
+            class="fi fi-br"
+          ></button>
+          <button
+            type="button"
+            data-language="jp"
+            title="日本語"
+            class="fi fi-jp"
+          ></button>
+        </div>
       </div>
       <button
         id="theme-switcher"
@@ -55,42 +113,6 @@
       >
         <i class="fas fa-moon"></i>
       </button>
-      <button
-        id="langselect"
-        class="icon"
-        type="button"
-        title="Change Language"
-        data-bs-toggle="collapse"
-        data-bs-target="#language"
-        aria-controls="menu"
-        aria-expanded="false"
-        aria-label="Change Language"
-      >
-        <span class="fa-solid fa-language"></span>
-        <label for="langselect"
-          ><span data-translate="Translations"></span
-        ></label>
-      </button>
-      <div class="langclp collapse p-1" id="language">
-        <button
-          type="button"
-          data-language="en"
-          title="English"
-          class="fi fi-us"
-        ></button>
-        <button
-          type="button"
-          data-language="br"
-          title="Português"
-          class="fi fi-br"
-        ></button>
-        <button
-          type="button"
-          data-language="jp"
-          title="日本語"
-          class="fi fi-jp"
-        ></button>
-      </div>
     </div>
   </nav>
 </header>
